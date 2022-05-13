@@ -1,6 +1,9 @@
 
 import './App.css';
 import ExpenseItem from './components/ExpenseItem';
+//import Hook  from './components/Hook';
+import NewExpense from './components/NewExpense/NewExpense'
+
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <NewExpense/> 
+      
+      
       <ExpenseItem 
       title = {expenses[0].title}
       amount = {expenses[0].amount}
@@ -44,6 +50,8 @@ function App() {
       amount = {expenses[2].amount}
       date = {expenses[2].date}
       />
+    
+      
       </header>
     </div>
   );
